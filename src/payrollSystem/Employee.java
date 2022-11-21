@@ -39,6 +39,6 @@ public abstract class Employee {
     public String toString(){
         return "Name: " + getFirstName() + " " + getLastName()
                 + "\n Pay Type: " + super.getClass().getSimpleName() +
-                "\n Monthly Pay: $" + calculateMonthlyPay();
+                "\n Monthly Pay: $" + String.format("%.2f", calculateMonthlyPay());
     }
 }
